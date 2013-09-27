@@ -3,7 +3,7 @@ declare namespace xmldb="http://exist-db.org/xquery/xmldb";
 let $item := request:get-parameter("uri", "11f78.0")
 
 let $collection := xmldb:create-collection('/db/apps/sade/sandbox/tg-extract/', $item)
-let $login := xmldb:login($collection, 'mathias', 'Cityweb1')
+let $login := xmldb:login($collection, '', '')
 
 (:  GET TIMESTAMP  :)
 let $dateTime := string(current-dateTime())
